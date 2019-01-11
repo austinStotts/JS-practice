@@ -13,3 +13,5 @@ let [arg1, arg2, arg3] = arr1;
 console.log('arg 1 ->', arg1);
 console.log('arg 2 ->', arg2);
 console.log('arg 3 ->', arg3);
+
+console.log([1,2,3,4,5].reduce((acc, val) => (acc.concat(val * 2)),[]));
