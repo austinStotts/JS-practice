@@ -78,7 +78,7 @@ function countIslands (mapStr) {
   }
 
   for(let k = 0; k < aLength; k++) {
-    console.log(array[k].join(''));
+    console.log(array[k]);
   }
   console.log(color);
   return color;
@@ -89,5 +89,6 @@ const test = '00...0\n0...00\n......\n0.0.0.\n0.....';
 const test2 = '..000.\n..000.\n..000.\n.0....\n..000.';
 const test3 = '0...0\n..0..\n0...0';
 const test4 = '0...0\n0...0\n0...0\n0...0\n00000';
-const test5 = '.....\n..0..\n.000.\n..0..\n.....'
-countIslands(test5)
+const test5 = '.....\n..0..\n.000.\n..0..\n.....';
+const test6 = '00....00\n000....0\n00..00.0\n00.00..0\n......0.\n.00..000\n00......\n00000.0.\n0000..00\n000.0.00\n00..0..0\n00000...';
+countIslands(test6)
