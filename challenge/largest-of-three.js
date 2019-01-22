@@ -1,5 +1,4 @@
 
-
 const largestProductOfThree = (colosseum) => (
   colosseum.reduce((warriors, duel) => 
   warriors.concat(
