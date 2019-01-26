@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TEST</title>
+</head>
+<body>
+  <p>testing...</p>
+  <script>
+
+    function anagramPosition (string) {
+      return Array.from(string.split(''))
+        .reduce((set, val) => 
+        set.concat(
+        set.map(sub => {
+          return [val,...sub]
+          .sort()
+          .join('')
+        })),[''])
+        .sort()
+      // console.log(list)
+      // return list.indexOf(string);
+    }
+
+    function other (string) {
+      let array = Array.from(string.split(''))
+      let results = [''];
+
+      for(let i = 0; i < 100; i++) {
+        let word = array.map(sub => (
+        [array[i], ...sub]
+        .sort().join('')));
+        console.log("word:", word)
+        results.concat([word])
+      }
+    }
+
+    console.log(anagramPosition("ABBS"));
+  </script>
+</body>
+</html>
