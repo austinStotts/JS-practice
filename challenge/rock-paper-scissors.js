@@ -22,7 +22,7 @@ const powerSet = (n) => {
       .join(''))),[''])
       .filter(v => v.length === n ? v : null)
 
-  return Array.from(new Set(s(list)))
+  return list
 }
 
-console.log(powerSet(2))
+console.log(powerSet(2));
