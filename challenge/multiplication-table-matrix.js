@@ -6,7 +6,10 @@
 //  [0, 1, 2],
 //  [0, 2, 4]]
 
-const makeArray = (x, l) => {
+// !! !! !! !! !! !! !! !! !! !! !!
+// still need to submit <-
+
+const makeArray = (x, l) => { 
   let answer = [];
   for(let i = 0; i < l; i++) {
     answer.push(x * i);
